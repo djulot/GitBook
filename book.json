@@ -5,8 +5,8 @@
             "theme": "dark",
             "languages": [
                 {
-                    "lang": "js",
-                    "name": "JavaScript",
+                    "lang": "cURL",
+                    "name": "cURL",
                     "default": true
                 },
                 {
