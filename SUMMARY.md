@@ -2,8 +2,9 @@
 
 ## Overview
 
-* [My Awesome API](README.md)
+* [FileMaker - Gestion de préférences](README.md)
 
-## Methods
+## Méthodes
 
 * [Defining Methods](methods.md)
+
