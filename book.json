@@ -5,13 +5,13 @@
             "theme": "dark",
             "languages": [
                 {
-                    "lang": "cURL",
+                    "lang": "curl",
                     "name": "cURL",
                     "default": true
                 },
                 {
-                    "lang": "go",
-                    "name": "Go"
+                    "lang": "fmp",
+                    "name": "FileMaker"
                 }
             ]
         }
