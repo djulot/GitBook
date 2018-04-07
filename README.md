@@ -1,3 +1,6 @@
-# My Awesome API
+# Gestion des préférences dans FileMaker
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Ceci est une proposition pour la gestion des préférences dans une app FileMaker, que la préférence soit spécifique à un utilisateur, à une session ou générale.
+
+Elle s'appuie sur trois scripts et une fonction personnalisée.
+
