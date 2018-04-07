@@ -10,8 +10,9 @@ My first method exposes how to print a message in JavaScript and Go.
 {% sample lang="cURL" %}
 Here is how to print a message to `stdout` using JavaScript.
 
-```js
-console.log('My first method');
+```cURL
+-X POST 
+-d '{"objet": "nouveau"}'
 ```
 
 {% sample lang="go" %}
