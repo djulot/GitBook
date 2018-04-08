@@ -5,13 +5,9 @@
             "theme": "dark",
             "languages": [
                 {
-                    "lang": "js",
-                    "name": "JavaScript",
+                    "lang": "fmp",
+                    "name": "FileMaker",
                     "default": true
-                },
-                {
-                    "lang": "go",
-                    "name": "Go"
                 }
             ]
         }
