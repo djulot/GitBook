@@ -1,3 +1,5 @@
+Voici les méthodes disponibles pour le module **Gestion des préférences**.
+
 # Defining Methods
 
 Methods allow you to smoothly display code examples in different languages.
