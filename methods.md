@@ -1,32 +1,46 @@
 Voici les méthodes disponibles pour le module **Gestion des préférences**.
 
-# Defining Methods
+# Grl : Préférences sauvegarde
 
-Methods allow you to smoothly display code examples in different languages.
+Ce script permet d'ajouter ou modifier une préférence.
 
 {% method %}
-## My first method
+## Ajouter une préférence session
 
-My first method exposes how to print a message in JavaScript and Go.
+On entend par session la session utilisateur d'un poste donné.
 
-{% sample lang="cURL" %}
-Here is how to print a message to `stdout` using JavaScript.
+{% sample lang="fmp" %}
+On envoi au script un paramètre au format JSON, avec les clefs suivantes :
+- **clef** : le nom de la clef à enregistrer
+- **valeur** : valeur de la clef à enregistrer
+- **type** : type de la valeur à enregistrer <br>valeur acceptée : text | number | boolean | json
 
-```js
-console.log('My first method');
-```
-
-{% sample lang="go" %}
-Here is how to print a message to `stdout` using Go.
-
-```go
-fmt.Println("My first method")
+```fmp
+JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] )
 ```
 
 {% common %}
-Whatever language you are using, the result will be the same.
+La méthode ne retourne aucune valeur.
 
-```bash
-$ My first method
+{% endmethod %}
+
+{% method %}
+## Ajouter une préférence générale
+
+On entend par préférence générale une préférence pour l'ensemble de l'app quelque soit l'utilisateur ou la session.
+
+{% sample lang="fmp" %}
+On envoi au script un paramètre au format JSON, avec les clefs suivantes :
+- **clef** : le nom de la clef à enregistrer
+- **valeur** : valeur de la clef à enregistrer
+- **type** : type de la valeur à enregistrer <br>valeur acceptée : text | number | boolean | json
+- **general** : flag booléen doit être à vrai
+
+```fmp
+JSONSetElement ( "" ;	[ "clef" ; "modeleDefaut" ; JSONString ] ;	[ "valeur" ; "tdb - général" ; JSONString ] ;	[ "type" ; "text" ; JSONString ] ;	[ "general" ; True ; JSONBoolean ])
 ```
+
+{% common %}
+La méthode ne retourne aucune valeur.
+
 {% endmethod %}

@@ -1,6 +1,6 @@
 # Summary
 
-## Overview
+## À propos
 
 * [FileMaker - Gestion de préférences](README.md)
 
