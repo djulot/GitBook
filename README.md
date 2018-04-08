@@ -4,3 +4,5 @@ Ceci est une proposition pour la gestion des préférences dans une app FileMake
 
 Elle s'appuie sur trois scripts et une fonction personnalisée.
 
+
+
