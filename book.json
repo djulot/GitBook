@@ -5,13 +5,9 @@
             "theme": "dark",
             "languages": [
                 {
-                    "lang": "curl",
-                    "name": "cURL",
-                    "default": true
-                },
-                {
                     "lang": "fmp",
-                    "name": "FileMaker"
+                    "name": "FileMaker",
+                    "default": true
                 }
             ]
         }

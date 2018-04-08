@@ -1,3 +1,5 @@
+Voici les méthodes disponibles pour le module **Gestion des préférences**.
+
 # Defining Methods
 
 Methods allow you to smoothly display code examples in different languages.
@@ -7,20 +9,18 @@ Methods allow you to smoothly display code examples in different languages.
 
 My first method exposes how to print a message in JavaScript and Go.
 
-{% sample lang="curl" %}
-Code pour le cURL.
+{% sample lang="cURL" %}
+Here is how to print a message to `stdout` using JavaScript.
 
-```cURL
--X POST 
--d '{"objet": "nouveau"}'
+```js
+console.log('My first method');
 ```
 
-{% sample lang="fmp" %}
-Code pour l'option cURL dans FileMaker.
+{% sample lang="go" %}
+Here is how to print a message to `stdout` using Go.
 
-```fmp
-"-X POST " &
-"-d " & citation ( "{\"objet\": \"nouveau\"}" )
+```go
+fmt.Println("My first method")
 ```
 
 {% common %}
