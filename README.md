@@ -6,10 +6,8 @@ Ceci est une proposition pour la gestion des préférences dans une app FileMake
 | :--- | :--- |
 | dépendance | aucune |
 | version FileMaker minimum | 16 |
-| compatibilité | Pro \| Server \| WebDirect \| Go |
+| compatibilité | Pro - Server - WebDirect - Go |
 | licence | [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
-
-
 
 
 
