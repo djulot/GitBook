@@ -6,5 +6,5 @@
 
 ## Méthodes
 
-* [Defining Methods](methods.md)
+* [Définitions des méthodes](methods.md)
 
