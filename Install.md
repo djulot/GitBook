@@ -11,7 +11,7 @@ Il faut juste prévoir dans votre app une table contenant une rubrique avec un s
 * Au format .fmp12 : [lst - Gestion des préférences.zip](/lst - Gestion des préférences.zip)
 * Au format Clip Manager 5 : [CM lst - Gestion des préférences.zip](/CM lst - gestion des préférences.zip)
 
-## Initialisation
+### Initialisation
 
 Une fois les scripts copiés dans votre app, il faut initialiser le module pour cela :
 
