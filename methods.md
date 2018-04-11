@@ -5,14 +5,17 @@ Voici les méthodes disponibles pour le module **lst - Gestion des préférences
 Ce script permet d'ajouter ou modifier une préférence.
 
 {% method %}
-## Ajouter une préférence session
-
-On entend par session la session utilisateur d'un poste donné.
+## lst_pref.Sauvegarde
+Enregistre ou modifie une préférence.
 
 On envoi au script un paramètre au format JSON, avec les clefs suivantes :
-- **clef** : le nom de la clef à enregistrer
-- **valeur** : valeur de la clef à enregistrer
-- **type** : type de la valeur à enregistrer <br>valeur acceptée : text | number | boolean | json
+- **clef** *obligatoire*<br>le nom de la clef à enregistrer
+- **valeur** *obligatoire*<br>valeur de la clef à enregistrer
+- **type** *obligatoire* (text|number|boolean|json)<br>type de la valeur à enregistrer
+- **general** *optionnel* booléen<br>si vrai alors la préférence sera enregistrée pour l'ensemble de l'app
+- **user** *optionnel* booléen<br>si vrai alors la préférence sera enregistrée pour le compte utilisateur
+
+
 
 
 {% sample lang="fmp" %}
