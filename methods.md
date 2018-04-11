@@ -9,11 +9,13 @@ Ce script permet d'ajouter ou modifier une préférence.
 
 On entend par session la session utilisateur d'un poste donné.
 
-{% sample lang="fmp" %}
 On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 - **clef** : le nom de la clef à enregistrer
 - **valeur** : valeur de la clef à enregistrer
 - **type** : type de la valeur à enregistrer <br>valeur acceptée : text | number | boolean | json
+
+
+{% sample lang="fmp" %}
 
 ```fmp
 JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] )
