@@ -17,16 +17,23 @@ On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 
 *Si les paramètres *general* et *user* sont tous les deux à faux ou ne sont pas envoyés, alors la préférence sera enregistrée pour le compte utilisateur associé au poste.*
 
-
 {% sample lang="fmp" %}
-
 ```fmp
-// pour une préférence lié à un compte utilisateur pour un poste donné
+// pour une préférence liée à un compte utilisateur pour un poste donné
 JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] )
 
 // pour une préférence lié à un compte utilisateur
 JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] ;	[ "user" ; True ; JSONBoolean ]))
 ```
+{% sample lang="json" %}
+```json
+// pour une préférence liée à un compte utilisateur pour un poste donné
+{	"clef" : "majEmails",	"type" : "boolean",	"valeur" : true}
+
+// pour une préférence liée à un compte utilisateur
+{	"clef" : "majEmails",	"type" : "boolean",	"user" : true,	"valeur" : true}
+```
+
 
 {% common %}
 La méthode ne retourne aucune valeur.
