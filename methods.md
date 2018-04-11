@@ -54,12 +54,32 @@ On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 
 
 {% sample lang="fmp" %}
-
 ```fmp
-JSONSetElement ( "" ;	[ "clef" ; "modeleDefaut" ; JSONString ] ;	[ "valeur" ; "tdb - général" ; JSONString ] ;	[ "type" ; "text" ; JSONString ] ;	[ "general" ; True ; JSONBoolean ])
+// pour une préférence liée à un compte utilisateur pour un poste donné
+JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ]  )
+
+// pour une préférence lié à un compte utilisateur
+JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "user" ; True ; JSONBoolean ]))
+
+// pour une préférence générale à l'app
+JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "general" ; True ; JSONBoolean ])
+```
+{% sample lang="json" %}
+```json
+// pour une préférence liée à un compte utilisateur pour un poste donné
+{	"clef" : "majEmails"
+}
+
+// pour une préférence liée à un compte utilisateur
+{	"clef" : "majEmails",	"user" : true
+}
+
+// pour une préférence générale à l'app
+{	"clef" : "majEmails",	"general" : true
+}
 ```
 
 {% common %}
-La méthode ne retourne aucune valeur.
+La méthode retourne la valeur lue.
 
 {% endmethod %}
