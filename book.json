@@ -8,6 +8,10 @@
                     "lang": "fmp",
                     "name": "FileMaker",
                     "default": true
+                },
+                {
+                    "lang": "json",
+                    "name": "JSON"
                 }
             ]
         }
