@@ -1,9 +1,5 @@
 Voici les méthodes disponibles pour le module **lst - Gestion des préférences**.
 
-# Grl : Préférences sauvegarde
-
-Ce script permet d'ajouter ou modifier une préférence.
-
 {% method %}
 ## lst_pref.Sauvegarde
 Enregistre ou modifie une préférence.
@@ -24,6 +20,9 @@ JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; Tru
 
 // pour une préférence lié à un compte utilisateur
 JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] ;	[ "user" ; True ; JSONBoolean ]))
+
+// pour une préférence générale à l'app
+JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] ;	[ "general" ; True ; JSONBoolean ])
 ```
 {% sample lang="json" %}
 ```json
@@ -32,8 +31,10 @@ JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; Tru
 
 // pour une préférence liée à un compte utilisateur
 {	"clef" : "majEmails",	"type" : "boolean",	"user" : true,	"valeur" : true}
-```
 
+// pour une préférence générale à l'app
+{	"clef" : "majEmails",	"general" : true,	"type" : "boolean",	"valeur" : true}
+```
 
 {% common %}
 La méthode ne retourne aucune valeur.
@@ -41,15 +42,16 @@ La méthode ne retourne aucune valeur.
 {% endmethod %}
 
 {% method %}
-## Ajouter une préférence générale
-
-On entend par préférence générale une préférence pour l'ensemble de l'app quelque soit l'utilisateur ou la session.
+## lst_pref.Lecture
+Permet de récupérer une valeur d'une préférence.
 
 On envoi au script un paramètre au format JSON, avec les clefs suivantes :
-- **clef** : le nom de la clef à enregistrer
-- **valeur** : valeur de la clef à enregistrer
-- **type** : type de la valeur à enregistrer <br>valeur acceptée : text | number | boolean | json
-- **general** : flag booléen doit être à vrai
+- **clef** *obligatoire*<br>le nom de la clef à récupérer
+- **general** *optionnel* booléen<br>si vrai alors la préférence à récupérer est générale
+- **user** *optionnel* booléen<br>si vrai alors la préférence à récupérer est liée au compte utilisateur
+
+*Si les paramètres *general* et *user* sont tous les deux à faux ou ne sont pas envoyés, alors la préférence à récupérer est liée au compte utilisateur associé au poste.*
+
 
 {% sample lang="fmp" %}
 
