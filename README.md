@@ -9,5 +9,5 @@ Ceci est une proposition pour la gestion des préférences dans une app FileMake
 | compatibilité | Pro - Server - WebDirect - Go |
 | licence | [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 
-
+Source : pour [ClipManager](#filemaker---gestion-de-préférences "Récupération de la source au format ClipManager")
 
