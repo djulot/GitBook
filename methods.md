@@ -21,7 +21,11 @@ On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 {% sample lang="fmp" %}
 
 ```fmp
+// pour une préférence lié à un compte utilisateur pour un poste donné
 JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] )
+
+// pour une préférence lié à un compte utilisateur
+JSONSetElement ( "" ;	[ "clef" ; "majEmails" ; JSONString ] ;	[ "valeur" ; True ; JSONBoolean ] ;	[ "type" ; "boolean" ; JSONString ] ;	[ "user" ; True ; JSONBoolean ]))
 ```
 
 {% common %}
