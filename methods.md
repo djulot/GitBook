@@ -31,12 +31,13 @@ La méthode ne retourne aucune valeur.
 
 On entend par préférence générale une préférence pour l'ensemble de l'app quelque soit l'utilisateur ou la session.
 
-{% sample lang="fmp" %}
 On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 - **clef** : le nom de la clef à enregistrer
 - **valeur** : valeur de la clef à enregistrer
 - **type** : type de la valeur à enregistrer <br>valeur acceptée : text | number | boolean | json
 - **general** : flag booléen doit être à vrai
+
+{% sample lang="fmp" %}
 
 ```fmp
 JSONSetElement ( "" ;	[ "clef" ; "modeleDefaut" ; JSONString ] ;	[ "valeur" ; "tdb - général" ; JSONString ] ;	[ "type" ; "text" ; JSONString ] ;	[ "general" ; True ; JSONBoolean ])
