@@ -15,7 +15,7 @@ On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 - **general** *optionnel* booléen<br>si vrai alors la préférence sera enregistrée pour l'ensemble de l'app
 - **user** *optionnel* booléen<br>si vrai alors la préférence sera enregistrée pour le compte utilisateur
 
-
+*Si les paramètres *general* et *user* sont tous les deux à faux ou ne sont pas envoyés, alors la préférence sera enregistrée pour le compte utilisateur associé au poste.*
 
 
 {% sample lang="fmp" %}
