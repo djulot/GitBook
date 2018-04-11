@@ -1,4 +1,4 @@
-Voici les méthodes disponibles pour le module **Gestion des préférences**.
+Voici les méthodes disponibles pour le module **lst - Gestion des préférences**.
 
 # Grl : Préférences sauvegarde
 
