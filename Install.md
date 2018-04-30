@@ -8,7 +8,7 @@ Il faut juste prévoir dans votre app une table contenant une rubrique avec un s
 
 ### Fichiers sources :
 
-* Au format .fmp12 : [lst - Gestion des préférences.zip](/lst - Gestion des préférences.zip)
+* Au format .fmp12 : [lst - Gestion des préférences.zip](https://github.com/djulot/GitBook/blob/master/CM%20lst%20-%20gestion%20des%20préférences.zip)
 * Au format Clip Manager 5 : [CM lst - Gestion des préférences.zip](/CM lst - gestion des préférences.zip)
 
 ### Initialisation
