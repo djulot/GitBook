@@ -47,6 +47,8 @@ Permet de récupérer une valeur d'une préférence.
 
 On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 
+<table><thead><tr><th>clef</th><th>dispo</th><th>description</th></thead></tr><tr><td>clef</td><td>obligatoire</td></tr></table>
+
 - `clef` *obligatoire*<br>le nom de la clef à récupérer
 - `general` *optionnel* booléen<br>si vrai alors la préférence à récupérer est générale
 - `user` *optionnel* booléen<br>si vrai alors la préférence à récupérer est liée au compte utilisateur
