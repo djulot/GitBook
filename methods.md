@@ -5,11 +5,7 @@ Voici les méthodes disponibles pour le module **lst - Gestion des préférences
 Enregistre ou modifie une préférence.
 
 On envoi au script un paramètre au format JSON, avec les clefs suivantes :
-- **clef** *obligatoire*<br>le nom de la clef à enregistrer
-- **valeur** *obligatoire*<br>valeur de la clef à enregistrer
-- **type** *obligatoire* (text|number|boolean|json)<br>type de la valeur à enregistrer
-- **general** *optionnel* booléen<br>si vrai alors la préférence sera enregistrée pour l'ensemble de l'app
-- **user** *optionnel* booléen<br>si vrai alors la préférence sera enregistrée pour le compte utilisateur
+<table><tr><th>clef</th><th>type</th><th>requis</th><th>description</th></tr><tr><td><b>clef</b></td><td>texte</td><td>oui</td><td>le nom de la clef à enregistrer</td></tr><tr><td><b>valeur</b></td><td>-</td><td>oui</td><td>valeur de la clef à enregistrer</td></tr><tr><td><b>general</b></td><td>booléen</td><td>non</td><td>si vrai alors la préférence sera enregistrée pour l'ensemble de l'app</td></tr><tr><td><b>user</b></td><td>booléen</td><td>non</td><td>si vrai alors la préférence sera enregistrée pour le compte utilisateur</td></tr></table>
 
 *Si les paramètres *general* et *user* sont tous les deux à faux ou ne sont pas envoyés, alors la préférence sera enregistrée pour le compte utilisateur associé au poste.*
 
@@ -47,11 +43,7 @@ Permet de récupérer une valeur d'une préférence.
 
 On envoi au script un paramètre au format JSON, avec les clefs suivantes :
 
-<table><thead><tr><th>clef</th><th>dispo</th><th>description</th></thead></tr><tr><td>clef</td><td>obligatoire</td></tr></table>
-
-- `clef` *obligatoire*<br>le nom de la clef à récupérer
-- `general` *optionnel* booléen<br>si vrai alors la préférence à récupérer est générale
-- `user` *optionnel* booléen<br>si vrai alors la préférence à récupérer est liée au compte utilisateur
+<table><tr><th>clef</th><th>type</th><th>requis</th><th>description</th></tr><tr><td><b>clef</b></td><td>texte</td><td>oui</td><td>le nom de la clef à récupérer</td></tr><tr><td><b>general</b></td><td>booléen</td><td>non</td><td>si vrai alors la préférence à récupérer est générale</td></tr><tr><td><b>user</b></td><td>booléen</td><td>non</td><td>si vrai alors la préférence à récupérer est liée au compte utilisateur</td></tr></table>
 
 *Si les paramètres *general* et *user* sont tous les deux à faux ou ne sont pas envoyés, alors la préférence à récupérer est liée au compte utilisateur associé au poste.*
 
